@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image</title>
+    <title>Get Image Exif</title>
+    <script src="./exif.min.js"></script>
+    <script src="./vue.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
 </head>
+
 <body>
-    <div>
-        I'm image!
+    <h1>Read Image Exif</h1>
+    <div id="app">
+
+        <div class="form-box">
+            <div class="item">
+                <span>Image:</span>
+                <input type="file" @change="fileChange">
+            </div>
+
+            <div class="item">
+                <span>Exif:</span>
+                <textarea cols="30" rows="20" v-model="info"></textarea>
+            </div>
+        </div>
+        <div class="img-box" ref="imgbox">
+        </div>
     </div>
+    <script src="./index.js"></script>
 </body>
+
 </html>

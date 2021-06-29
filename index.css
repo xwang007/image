@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color:darksalmon;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+}
+
+#app {
+    padding: 20px;
+    width: 80%;
+    height: 70%;
+    border: 2px solid #000;
+    margin: 0 auto;
+    display: flex;
+}
+
+#app .form-box {
+    flex: 1;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+#app .img-box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#app .img-box img {
+    max-width: 60%;
+    max-height: 50%;
+}
+
+#app >div >.item {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    background-color: transparent;
+    resize: none;
+}
