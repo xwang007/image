@@ -1,3 +1,7 @@
+import { createApp } from 'vue'
+import EXIF from 'exif-js'
+import style from './index.scss'
+
 const App = {
     data() {
         return {
@@ -28,4 +32,4 @@ const App = {
 
 }
 
-Vue.createApp(App).mount('#app')
+createApp(App).mount('#app')

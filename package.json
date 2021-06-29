@@ -1,0 +1,27 @@
+{
+  "name": "image",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/xwang007/image/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "scripts": {
+    "dev": "parcel serve  src/index.html --no-source-maps --no-cache --dist-dir dev",
+    "build": "parcel build src/index.html --no-source-maps --dist-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwang007/image.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xwang007/image/issues"
+  },
+  "homepage": "https://github.com/xwang007/image#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.3.1",
+    "parcel": "^2.0.0-beta.3.1"
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0",
+    "vue": "^3.1.2"
+  }
+}
